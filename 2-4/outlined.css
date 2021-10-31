@@ -1,0 +1,25 @@
+body
+{
+	direction:rtl;
+	text-align:right;
+}
+.btn *
+{
+	vertical-align:middle;
+}
+.btn
+{
+	padding:0px 24px 0 24px;
+	height:40px;
+	color:#6750A4;
+	border-radius:2em;
+	border:solid 2px #6750A4;
+	margin:8px 0px 0px 8px;
+	font-size:18px;
+	background-color:#FFFBFE;
+}
+.btn i
+{
+	font-size:18px;
+	margin:0 -8px 0 8px;
+}
