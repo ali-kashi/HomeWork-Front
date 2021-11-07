@@ -1,0 +1,59 @@
+ body
+{
+	direction:rtl;
+	text-align:right;
+}
+
+i
+{
+	vertical-align:middle;
+}
+.btn
+{
+  min-width: 48px;
+	height: 40px;
+  line-height: 40px;
+  color:#6750A4;
+	padding: 0 16px 0 0 ;
+	margin:8px 0 0px 8px;
+  display:inline-block;
+}
+i
+{
+	color:#6750A4;
+	font-size:18px;
+	padding:0 8px 0 12px;
+}
+.outlined-button
+{
+	color:#6750A4;
+  outline-style:solid;
+  outline-color:#938F99;
+  outline-width: 1px;
+  border-radius:2em;
+}
+
+.filled-tonal-button
+{
+	color:#1E192B;
+	padding: 0 16px 0 0 ;
+	margin:8px 0 0 8px;
+  display:inline-block;
+  border-radius:2em;
+  background-color: #E8DEF8;
+}
+.filled-tonal-button i
+{
+  color: #1E192B
+}
+
+.filled-button
+{
+  color:#FFFFFF;
+  border-radius:2em;
+  background-color:#6750A4;
+}
+.filled-button i
+{
+  color:#FFFFFF;
+}
