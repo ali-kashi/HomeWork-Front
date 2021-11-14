@@ -1,0 +1,80 @@
+.containet
+{
+  margin: 80px auto;
+  width: 420px;
+  border: 3px #6750A4 solid;
+  background-color: #FFF;
+}
+.head
+{
+  font-size: 22px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #6750A4;
+  color: #fff;
+}
+.wrap
+{
+  margin: 30px 5px;
+  padding: 15px;
+}
+.group
+{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+
+
+}
+input
+{
+  width: 90%;
+  border: transparent;
+  display: block;
+  border-bottom: 1px black solid;
+  padding: 15px;
+  padding-left: 10px;
+  font-size: 18px;
+
+}
+label
+{
+  position: absolute;
+  font-size: 18px;
+  top: 20px
+}
+input:focus ~ label,input:valid ~ label{
+    top:-10px;
+    font-size: 14px;
+    font-weight:bold;
+}
+input:focus{
+    outline: none;
+}
+
+.btn
+{
+  margin-bottom: 10px;
+}
+button
+{
+  border: transparent;
+  font-size:20px;
+  padding: 0 24px 0 16px;
+  background-color:#6750A4;
+  color:#FFFFFF;
+  font-weight: 500;
+  height: 40px;
+  border-radius:2em;
+  cursor: pointer;
+}
+button i
+{
+  font-size: 18px;
+  padding-right: 8px;
+}
+button:hover
+{
+   background-color:#fff;
+   color:#6750A4
+}
