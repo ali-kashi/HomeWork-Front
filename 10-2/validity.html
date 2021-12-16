@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+  <body>
+    <form class="" action="#">
+      <input type="number" min="0" max="20" step="2" required>
+      <input type="submit" value="ارسال">
+    </form>
+    <script>
+    var requiredList = document.querySelectorAll(':required');
+    for(var required of requiredList)
+    {
+      required.addEventListener('blur',validation);
+      required.addEventListener('keydown',temp1);
+    }
+
+    function validation(){
+        if( this.validity.rangeUnderflow){
+
+            var error = 'عدد وارد شده کمتر از حد مجاز است !';
+            this.setCustomValidity( error );
+            this.reportValidity();
+        }
+        else if( this.validity.rangeOverflow){
+            var error = 'عدد وارد شده بیشتر از حد مجاز است  !';
+            this.setCustomValidity( error );
+            this.reportValidity();
+        }
+        else if( this.validity.stepMismatch){
+
+            var error = 'عدد وارد شده در گام مشخص شده نیست !';
+            this.setCustomValidity( error );
+            this.reportValidity();
+        }
+        else if( this.validity.valueMissing){
+
+            var error = 'عددی را وارد کنید !';
+            this.setCustomValidity( error );
+            this.reportValidity();
+        }
+        else if(this.validity){
+          var error = '';
+          this.setCustomValidity( error );
+          this.reportValidity();
+        }
+        else {
+          var error = ' ';
+          this.setCustomValidity( error );
+          this.reportValidity();
+        }
+      }
+      function temp1()
+      {
+        if(this.validity){
+        var error = ' ';
+        this.setCustomValidity(error);
+        this.reportValidity();
+      }
+      }
+  </script>
+  </body>
+</html>
