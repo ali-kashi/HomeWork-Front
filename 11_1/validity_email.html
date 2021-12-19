@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+  <body>
+    <form class="" action="#">
+      <input type="email" pattern="[a-zA-Z0-9.-]+@[a-z-]+\.[a-z]{2,3}" required>
+      <input type="submit" value="ارسال">
+    </form>
+    <script>
+    var requiredList = document.querySelectorAll(':required');
+    for(var required of requiredList)
+    {
+      required.addEventListener('blur',validation);
+      required.addEventListener('keydown',temp1);
+    }
+
+    function validation(){
+        if( this.validity.patternMismatch){
+          if( this.validity.valueMissing)
+          {
+            var error = 'این فیلد الزامی است !';
+            this.setCustomValidity( error );
+            this.reportValidity();
+          }
+          var patern1 = /[a-zA-Z0-9.-]+@[a-z-]+\.[a-z]{2,3}/mg;
+          if (!(this.value.match(patern1)))
+          {
+            var error = 'ایمیل وارد شده صحیح نیست';
+            this.setCustomValidity( error );
+            this.reportValidity();
+          }
+          var patern1 = /[a-zA-Z1-9.-]+@+[a-zA-Z1-9.-]/mg;
+          if (!(this.value.match(patern1)))
+          {
+            var error = 'قسمت بعد از @ وارد نشده است !';
+            this.setCustomValidity( error );
+            this.reportValidity();
+          }
+          var patern1 = /[a-zA-Z1-9.-]+@/mg;
+          if (!(this.value.match(patern1)))
+          {
+            var error = 'قسمت قبل @ وارد نشده است !';
+            this.setCustomValidity( error );
+            this.reportValidity();
+          }
+          var patern1 = /@/mg;
+          if (!(this.value.match(patern1)))
+          {
+            var error = 'نماد @ وجود ندارد ';
+            this.setCustomValidity( error );
+            this.reportValidity();
+          }
+        }
+        else {
+          var error = '';
+          this.setCustomValidity( error );
+          this.reportValidity();
+        }
+      }
+      function temp1()
+      {
+        if(this.validity){
+        var error = ' ';
+        this.setCustomValidity(error);
+        this.reportValidity();
+      }
+      }
+  </script>
+  </body>
+</html>
