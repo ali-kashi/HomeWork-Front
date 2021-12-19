@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <label id="name" for="name">نام خود را وارد کنید</label>
+    <input  type="text" name="name"  required>
+    <label id="family" for="family">فامیل خود را وارد کنید</label>
+    <input type="text" name="family"  required>
+    <label id="year" for="year">سن خود را وارد کنید</label>
+    <input type="text" name="year">
+
+    <script type="text/javascript">
+      var requiredList = document.querySelectorAll(':required');
+      for(var required of requiredList)
+      {
+          var label_for=document.querySelector("#"+required.name);
+          label_for.innerText=label_for.innerText+"*";
+      }
+    </script>
+  </body>
+</html>
