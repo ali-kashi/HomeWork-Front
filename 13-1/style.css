@@ -1,0 +1,57 @@
+body
+{
+  margin: 0px;
+}
+.menu
+{
+  position: relative;
+  background-color: rgba(255,255,0,.2);
+  display: block;
+}
+.iconMenu
+{
+  font-size: 26px;
+  padding: 16px;
+  visibility: hidden;
+  position: absolute;
+  cursor: pointer;
+}
+.menu ul{
+  font-size: 18px;
+  font-family: 'b nazanin';
+  list-style-type: none;
+  margin: 0px;
+  padding: 8px;
+}
+.menu li
+{
+  padding: 8px;
+}
+@media screen AND (min-width: 1240px){
+.menu-lg
+{
+    width: 100%;
+    display: block;
+}
+.menu-lg li
+{
+  display: inline-block;
+}
+}
+@media screen AND (max-width: 1240px){
+.menu-md
+{
+    width: 300px;
+    display: none;
+
+}
+.menu-md li
+{
+  display: block;
+}
+.iconMenu
+{
+  visibility: visible;
+  position: static;
+}
+}
