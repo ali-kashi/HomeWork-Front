@@ -1,0 +1,23 @@
+body
+{
+  background-color: #fafafa;
+  font-size: 18px;
+  font-family: 'b nazanin';
+}
+.main-content
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.namePage
+{
+  margin: 0;
+  padding: 8px;
+  border-bottom:solid 1.5px #e0e0e0;
+  font-size: 20px;
+  grid-column: 1/5;
+}
+.card
+{
+max-width: 320px;
+}
