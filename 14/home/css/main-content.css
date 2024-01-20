@@ -1,0 +1,27 @@
+.swiper__title-swiper
+{
+  padding: 8px 1rem;
+  font-size: .8rem;
+}
+.swiper .swiper-button-prev {
+    top: 255px
+}
+.swiper .swiper-button-next {
+    top: 255px
+}
+.swiper {
+  width: 90vw;
+  height: auto;
+  background-color: #fff;
+	padding: 0 16px;
+}
+/*slider*/
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.slider
+{
+	width:90vw;
+	margin-left: auto;
+    margin-right: auto;
+}

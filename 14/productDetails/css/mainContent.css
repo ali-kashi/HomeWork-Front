@@ -1,0 +1,172 @@
+.main-content
+{
+  display: grid;
+  grid-template-columns: 16rem auto;
+  background-color: #fff;
+}
+.main-content__imageProduct img
+{
+  width: calc(100% - 1rem);
+  margin: 16px;
+}
+.details__nameProduct
+{
+  font-size: .7rem;
+  padding: 1rem 0 .6rem .6rem;
+}
+.details__Property
+{
+  width: 100%;
+}
+.details__Property span
+{
+  font-size: .6rem;
+}
+.Property__attribute
+{
+  font-size: .5rem;
+  line-height: 35px;
+  font-family: 'vazir' , 'b nazanin';
+}
+.details__boldProperty
+{
+  background-color: rgba(224,224,224,.5);
+  border-radius: 4px;
+  min-width: 10rem;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: .65rem;
+  margin-left: .5rem;
+}
+.details__boldProperty p
+{
+  margin: 8px;
+}
+.btn
+{
+  min-width: 48px;
+	height: 40px;
+  line-height: 40px;
+  color:#6750A4;
+	padding: 0 16px 0 0 ;
+  text-align: center;
+	margin:8px 8px 8px 8px;
+  display:inline-block;
+  font-weight: 500;
+  border: none;
+  font-size: .55rem;
+  font-family: 'vazir' , 'b nazanin';
+}
+.productBasket
+{
+    grid-column: 1/3;
+}
+.btn i
+{
+	font-size:18px;
+	padding:0 8px 0 12px;
+  vertical-align:middle;
+}
+.filled-button
+{
+  color:#FFFFFF;
+  border-radius:2em;
+  background-color:#6750A4;
+}
+.filled-button i
+{
+  color:#FFFFFF;
+}
+.filled-button:hover
+{
+  background-color: rgba(103, 80, 164, .9);
+}
+.details__Price
+{
+  text-align: left;
+  font-weight: bold;
+}
+.details__grid
+{
+  display: grid;
+  grid-template-columns: auto 10.5rem;
+  margin-top: 1rem;
+}
+.feedback__Title
+{
+  font-size: .7rem;
+  margin-top: .5rem;
+  padding: .5rem;
+  /* border-bottom:solid 2px #e0e0e0; */
+}
+.feedback__tempComment
+{
+  font-size: .55rem;
+  padding: .5rem;
+}
+.feedback
+{
+  margin-top: 1rem;
+  font-size: .65rem;
+  border-bottom:solid 1.5px #e0e0e0;
+  grid-column: 1/3;
+  margin-top: 2rem;
+}
+.feedback__text
+{
+  width: calc(100% - 2rem);
+	height:4rem;
+	padding:.5rem;
+	font-size:.65rem;
+  font-family: 'vazir';
+  margin:.2rem 1rem 0 1rem;
+}
+.feedback__labelText
+{
+  font-size: .7rem;
+	display:block;
+	text-align:right;
+  padding: .5rem .5rem .5rem 0;
+
+}
+.viewFeedback__comment
+{
+  font-size: .55rem;
+  padding: .5rem;
+}
+.viewFeedback__comment > i
+{
+  font-size: 24px;
+  padding-left: 8px;
+}
+
+.like > i
+{
+  font-size: 24px;
+  color: #ff0000;
+  position: absolute;
+  top: 39px;
+  right: 5px;
+}
+.bookmark > i
+{
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  right:8px;
+}
+@media screen and (max-width:1024px)
+{
+  .details__grid_md
+  {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width:480px)
+{
+  .main-content_sm
+  {
+      display: block;
+  }
+}

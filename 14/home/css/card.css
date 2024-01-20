@@ -1,0 +1,103 @@
+.card
+{
+  max-width: 360px;
+  border-radius: .5rem;
+  display: block;
+  text-align: center;
+  margin:10px 0 40px 0 ;
+  position: relative;
+  background-color: #fff;
+border: solid 1.5px #fff;
+}
+.card:hover
+{
+    border: solid 1.5px #e0e0e0;
+}
+.card__img-top
+{
+
+  height: 194px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.card__img-top > img
+{
+    margin-top: 5px;
+    height: 189px;
+}
+.card__body
+{
+  padding:0 16px;
+
+}
+.card__title
+{
+  width: 100%;
+  padding-top: 16px;
+  text-align: right;
+  color: #232F34;
+  font-size: .6rem;
+  cursor: pointer;
+}
+.card__text
+{
+
+  font-size: .65rem;
+  color: #232F34;
+  padding:16px 0 16px 16px;
+  text-align: left;
+  cursor: pointer;
+}
+.btn
+{
+  min-width: 64px;
+	padding:0px 8px;
+	height:36px;
+  line-height: 36px;
+	font-size: .6rem;
+  margin:8px 8px;
+  text-decoration: none;
+  border:none;
+  border-radius: 4px;
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn_pirimary
+{
+  	color:#6750A4;
+    background-color:#FFFBFE;
+}
+.btn_pirimary:hover
+{
+  	background-color:rgba(103,80,164,.05);
+}
+.btn:hover
+{
+  	background-color:rgba(103,80,164,.1);
+}
+.swiper_product-margin
+{
+	margin-top: 1rem;
+}
+
+.like > i
+{
+  font-size: 24px;
+  color: #ff0000;
+  margin-top: 8px;
+  position: absolute;
+  left: 56px;
+}
+.bookmark > i
+{
+  font-size: 24px;
+  margin-top: 8px;
+  position: absolute;
+  left: 16px;
+}
+.card__select-card-url
+{
+  cursor: pointer;
+}
