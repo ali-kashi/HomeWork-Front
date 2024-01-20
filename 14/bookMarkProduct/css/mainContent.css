@@ -1,0 +1,47 @@
+.main-content
+{
+  background-color: #fff;
+  display: grid;
+  padding: 0 8px;
+  grid-gap: 0px;
+}
+@media screen and (min-width:1280px)
+{
+  .main-content_xxlg
+  {
+      grid-template-columns: auto auto auto auto auto;
+  }
+}
+@media screen and (max-width:1279px)
+{
+  .main-content_xlg
+  {
+      grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (max-width:1024px)
+{
+  .main-content_lg
+  {
+      grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width:640px)
+{
+  .main-content_md
+  {
+      grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width:480px)
+{
+  .main-content_sm
+  {
+      grid-template-columns: auto;
+  }
+}
+.card
+{
+
+max-width:360px;
+}

@@ -1,0 +1,275 @@
+.data-table
+{
+width:max-content;
+  margin: auto;
+  border: solid 1px #e0e0e0;
+  border-spacing: 0px;
+  border-radius: 4px;
+}
+.container
+{
+	position: relative;
+	width: 100%;
+  overflow-x: auto;
+}
+.data-table th
+{
+  font-size: .7rem;
+}
+.data-table td,.data-table th
+{
+  border-bottom: solid 1px #e0e0e0;
+  border-collapse: collapse;
+  padding: 16px;
+  font-size:.65rem;
+}
+.data-table th
+{
+  font-size: .65rem;
+}
+.data-table tr
+{
+  height: 52px;
+}
+.data-table tr:first-child
+{
+  height: 56px;
+}
+.data-table__number-left
+{
+  text-align: left;
+}
+a
+{
+  color: #000;
+}
+.data-table td > img
+{
+  width: 80px;
+  margin: 0px;
+  padding: 0px;
+}
+.data-table td > input[type=number]
+{
+  width: 60px;
+  font-size: .65rem;
+  border: none;
+  padding-left: 5px;
+}
+.fulBuy
+{
+  border: solid 1px #e0e0e0;
+  border-radius: 4px;
+  min-width: 250px;
+  height: 120px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: .65rem;
+margin-left: .5rem;
+}
+@media screen and (max-width : 1024px)
+{
+	.fulBuy
+	{
+		margin-left: 0;
+	}
+}
+.btn
+{
+  min-width: 48px;
+	height: 40px;
+  line-height: 40px;
+  color:#6750A4;
+	padding: 0 16px 0 0 ;
+  text-align: center;
+	margin:16px 8px 0px 8px;
+  margin-top: 8px;
+  display:inline-block;
+  font-weight: 500;
+  border: none;
+  font-size: .6rem;
+  font-family: 'vazir';
+  cursor: pointer;
+}
+.btn i
+{
+	font-size:18px;
+	padding:0 8px 0 12px;
+vertical-align:middle;
+}
+.fulBuy__btn
+{
+  grid-column: 1/3;
+}
+.filled-button
+{
+  color:#FFFFFF;
+  border-radius:2em;
+  background-color:#6750A4;
+}
+.filled-button i
+{
+  color:#FFFFFF;
+}
+.filled-button:hover
+{
+  background-color: rgba(103, 80, 164, .9);
+}
+.main-content
+{
+  padding: .5em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  background-color: #fff;
+  position: relative;
+}
+@media screen and (max-width : 1024px)
+{
+  .main-content
+  {
+    display: block;
+  }
+}
+.fulBuy__totalPrice
+{
+  text-align: left;
+
+}
+.fulBuy p
+{
+  margin-top: 8px;
+}
+.SendInformation
+{
+  grid-column: 1/3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.labelTitr
+{
+  font-weight: bold;
+  border-bottom: solid 1px #e0e0e0;
+  padding-bottom: 8px;
+  font-size: .7rem;
+}
+input
+{
+    display: block;
+    height: 48px;
+    padding: 16px 16px 16px 12px;
+    box-sizing: border-box;
+    width: 280px;
+    font-size: .7rem;
+    font-family: "vazir";
+}
+input:focus
+{
+  outline-color: #6750A4;
+  border-width: 2px;
+}
+.input_sizeLg
+{
+  width: calc(100vw - 4rem);
+	margin-left:1rem; 
+}
+.containerInput
+{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.split
+{
+  border-bottom: solid 1px #e0e0e0;
+  grid-column: 1/4;
+  margin: 8px 0;
+}
+.containerInput__Helper-text
+{
+  height: 16px;
+  padding: 4px 16px 4px 12px;
+  margin-bottom: 1rem;
+  font-size: .6rem;
+}
+.containerInput label
+{
+  padding-right: 8px;
+  font-size: .7rem;
+}
+.gridFull
+{
+  grid-column: 1/4;
+}
+@media screen and (max-width : 1024px)
+{
+	input
+	{
+		width: 200px;
+	}
+}
+@media screen and (max-width : 700px)
+{
+	input
+	{
+		width: 200px;
+	}
+	.containerInput
+	{
+		grid-template-columns: auto auto;
+	}
+	.gridFull
+	{
+  	grid-column: 1/3;
+	}
+	.split
+	{
+		grid-column: 1/3;
+	}
+}
+@media screen and (max-width : 480px)
+{
+	.containerInput
+	{
+		grid-template-columns: auto;
+	}
+	.gridFull
+	{
+  	grid-column: 1/2;
+	}
+	.split
+	{
+		grid-column: 1/2;
+	}
+	input
+	{
+		 width: calc(100vw - 3rem);
+	}
+	.input_sizeLg
+	{
+ 	 width: calc(100vw - 3rem);
+	 margin-left:0; 
+	}
+}
+:root
+{
+  scroll-behavior: smooth;
+}
+.btn_size_md
+{
+  width: 8rem;
+}
+.factor div
+{
+  margin: 16px;
+}
+.factorTotalPrice_weight_bold
+{
+  font-weight: bold;
+  font-size: .65rem;
+}
+.factor
+{
+  font-size: .6rem;
+}

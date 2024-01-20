@@ -1,0 +1,87 @@
+a
+{
+  text-decoration: none;
+  color: #000;
+}
+.menu
+{
+  background-color: #fff;
+}
+.menu-spase
+{
+  top: 0px;
+}
+.menu > ul
+{
+  list-style-type: none;
+  margin-right: .4rem;
+}
+.menu > ul > li
+{
+  height: 56px;
+  padding:0 16px 0 16px;
+  border-radius: 1rem;
+  line-height: 56px;
+  display: inline-block;
+  font-size: .7rem;
+  margin-bottom: .4rem;
+}
+.menu > ul > li > a > i
+{
+  padding-left: 12px;
+}
+.menu > ul > li:hover
+{
+  background-color: rgba(238,238,238,.7);
+  cursor: pointer;
+}
+.main-content
+{
+  margin: 1rem;
+  position: relative;
+}
+.menu__select-for-primary
+{
+color: #304FFE;
+}
+.iconMenu
+{
+  width: 100%;;
+  font-size: 24px;
+  padding: 1rem;
+  visibility: hidden;
+  position: absolute;
+  cursor: pointer;
+  background-color: #fff;
+}
+@media screen AND (min-width: 1240px){
+.menu-lg
+{
+    width: 100%;
+    display: block;
+    position: sticky;
+}
+.menu-lg li
+{
+  display: inline-block;
+}
+}
+@media screen AND (max-width: 1240px){
+.menu-md
+{
+    display: none;
+    position: fixed;
+    border-radius: .2rem;
+}
+.menu-md > ul > li
+{
+  display: block;
+  margin: 8px;
+
+}
+.iconMenu
+{
+  visibility: visible;
+  position: static;
+}
+}
