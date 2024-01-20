@@ -1,0 +1,36 @@
+@import "../../login/css/style.css";
+html
+{
+  --rsize:calc(12px + 0.9 * 1vw);
+  font-size: var(--rsize);
+}
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+font-family: 'vazir';
+src: url('Vazir-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body
+{
+  direction: rtl;
+  text-align: right;
+  font-family: 'vazir' , 'b nazanin' , 'Tahoma';
+  background-color:#f5f5f5;
+  display: grid;
+  grid-template-columns: 360px auto;
+}
+.containet
+{
+  width: 380px;
+}
+.LabelForm
+{
+  font-size: .7rem;
+  margin: 1rem .5rem;
+}

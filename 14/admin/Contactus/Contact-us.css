@@ -1,0 +1,64 @@
+body
+{
+	text-align:rtl;
+	direction:rtl;
+}
+#section
+{
+	width:40%;
+	background-color:#FFFBF3;
+	height:100%;
+	margin:auto;
+	text-align:right;
+	
+}
+form
+{
+	width:300px;
+	font-family:"b nazanin";
+	font-weight:bold;
+	font-size:18px;
+	width:;
+	margin:auto;
+	text-align:center;
+}
+input , textarea
+{
+	width:300px;
+	height:30px;
+	padding:5px;
+	font-family:"b nazanin";
+	font-size:18px;
+}
+label
+{
+	display:block;
+	text-align:right;
+}
+h1
+{
+	font-family:"b nazanin";
+	font-weight:bold;
+	font-size:25px;
+	color:#233371;
+	margin:20px
+}
+#submit
+{
+	background-color:#845EC2;
+	font-family:"b nazanin";
+	font-weight:bold;
+	font-size:18px;
+	color:#ffffff;
+	padding:0px;
+	width:100px;
+	height:40px;
+	border-radius:15px;
+}
+textarea
+{
+	height:200px;
+	padding:5px;
+	font-family:"b nazanin";
+	font-size:18px;
+}

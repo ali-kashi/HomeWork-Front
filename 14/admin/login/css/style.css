@@ -1,0 +1,148 @@
+html
+{
+  --rsize:calc(12px + 0.9 * 1vw);
+  font-size: var(--rsize);
+}
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+font-family: 'vazir';
+src: url('Vazir-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body
+{
+  direction: rtl;
+  text-align: right;
+  font-family: 'vazir' , 'b nazanin' , 'Tahoma';
+  background-color:#fff;
+}
+.containet
+{
+  margin:56px auto;
+  width: 320px;
+  border: .1rem #ededed solid;
+  border-radius: .2rem;
+  background-color: #fff;
+}
+.name-store
+{
+  font-size: 1.5rem;
+  text-align: center;
+	color:#000;
+
+}
+.LabelLogin
+{
+  font-size: .7rem;
+  margin: 2rem 0 .5rem 0;
+}
+.wrap
+{
+  padding: 1rem;
+}
+.group
+{
+    position: relative;
+    margin-bottom: .7rem;
+}
+input ,textarea
+{
+  width: 100%;
+  display: block;
+  border:1px black solid;
+  padding: .5rem;
+  font-size: .6rem;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all .2s;
+  font-family: 'vazir';
+}
+label
+{
+  position: absolute;
+  font-size: .55rem;
+  top: 12px;
+  right: 16px;
+  background-color: #fff;
+  transition: all .2s;
+}
+input:valid ~ label , textarea:valid ~ label
+{
+  top:-10px;
+  font-size: .45rem;
+  background-color: #fff;
+  transition: all .4s;
+}
+input:focus ~ label , textarea:focus ~ label{
+    top:-10px;
+    font-size: .45rem;
+    color: #6200ee;
+    background-color: #fff;
+    transition: all .4s;
+}
+input:focus  , textarea:focus
+{
+  outline-color: #6200ee;
+  background-color: #fff;
+  transition: all .4s;
+}
+button
+{
+  border: transparent;
+  min-width: 48px;
+  height: 40px;
+  line-height: 40px;
+  color:#6750A4;
+  padding: 0 16px 0 0 ;
+  margin:8px 0 0px 8px;
+  display:inline-block;
+  font-weight: 500;
+  border-radius:2em;
+  color:#FFFFFF;
+  background-color:#6750A4;
+  font-size:.55rem;
+  font-family: 'vazir';
+}
+button i
+{
+  color:#FFFFFF;
+	font-size:18px;
+	padding:0 8px 0 12px;
+  vertical-align:middle;
+}
+button:hover
+{
+   background-color: rgba(103, 80, 164, .9);
+}
+.btn
+{
+  margin-bottom: 0px;
+}
+.register
+{
+  font-size: .5rem;
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  cursor: pointer;
+}
+.register:hover
+{
+  color:#6750A4;
+}
+.icon
+{
+  position: absolute;
+  top: .75rem;
+  left: 16px;
+  font-size: .6rem;
+}
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+@import '../panalAdmin/css/style.css';
+.main-content
+{
+	position: relative;
+  margin:  0 .5rem;
+  background-color: #fff;
+}
+.container
+{
+	position: absolute;
+	width: 100%;
+  overflow-x: auto;
+}
+.data-table
+{
+	width:max-content;
+  margin: .5rem auto;
+  border: solid 1px #e0e0e0;
+  border-spacing: 0px;
+  border-radius: 4px;
+}
+.data-table td,.data-table th
+{
+  border-bottom: solid 1px #e0e0e0;
+  border-collapse: collapse;
+  padding: 16px;
+  font-size: .7rem;
+  box-sizing: border-box;
+}
+.data-table tr
+{
+  font-size: .6rem;
+	  height: 52px;
+}
+.data-table th
+{
+  box-sizing: border-box;
+  height: 56px;
+}
+.data-table__number-left
+{
+  text-align: left;
+}
+a
+{
+  color: #000;
+}
+.tabel-Name
+{
+	
+}
